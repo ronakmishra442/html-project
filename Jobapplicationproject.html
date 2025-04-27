@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job application</title>
+    <link rel="stylesheet" href="Jobapplicationprojectstyle.css">
+
+</head>
+<body>
+   <div class="container">  
+        <div class="apply_box">
+            <h1>Job Application
+          <span class="title_small">(Web)</span>
+          </h1>
+
+          <form action="">
+            <div class="form_container">
+                <div class="form_control">
+                    <label for="first_name">first name</label>
+                    <input
+                    id="first_name"
+                    name="first_name"
+                    placeholder="Enter first name...."
+                    />
+                </div>
+
+                <div class="form_control">
+                    <label for="second_name">second name</label>
+                     <input
+                 id="second_name"
+                 name="second_name"
+                    placeholder="Enter second name...."
+                    />
+             </div>
+
+                <div class="form_control">
+                    <label for="Email_id">Email_id</label>
+                    <input
+                    type="Email_id"
+                    id="Email_id"
+                    name="Email_id"
+                    placeholder="Enter Email id...."          
+                    />
+                </div>
+                
+                <div class="form_control">
+                    <label for="Job_role">Job Role</label>
+               <select id="job_role"  name="job_role">
+                <option value="">Select Job role</option>
+                <option value="Frontend">frontend web developer</option>
+                <option value="backend">backend app developer</option>
+                <option value="system">system engineer</option>
+                <option value="web_developer">web developer</option>
+                <option value="Digital_marketing">Digital_marketing</option>
+                <option value="Sales">Sales</option>
+                <option value="full_stack app developer">full stack app developer</option>
+               </select>
+                </div>
+
+                
+                <div class="textarea_control">
+                    <label for="Address"> Address </label>
+                    <textarea
+                    id="Address"
+                    name="Address"
+                    row="4"
+                    cols="50"
+                    placeholder="Enter Address..."          
+                    ></textarea>
+                </div>
+              
+                <div class="form_control">
+                    <label for="City"> City </label>
+                <select id="city" name="city">
+                    <option value="">Select your city</option>
+                    <option value="Jaipur">Jaipur</option>
+                    <option value=" Ajmer">Ajmer</option>
+                    <option value="kolkata">kolkata</option>
+                    <option value="pune">pune</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="chennai">chennai</option>
+                    <option value="Noida">Noida</option> 
+                    <option value="Hyderabad">Hyderabad</option>
+                </select>
+            </div>
+
+            <div class="form_control">
+                <label for="Pincode">Pincode</label>
+                <input
+                type="Number"
+                id="Pincode"
+                name="Pincode"     
+                />
+            </div>
+
+            <div class="form_control">
+                <label for="date">Date</label>
+                <input value="2025-04-10"
+                type="date"
+                id="date"
+                name="date"     
+                />
+                </div>
+
+                <div class="form_control">
+                    <label for="upload">upload your CV</label>
+                    <input value="2025-04-10"
+                    type="file"
+                    id="upload"
+                    name="upload"     
+                    />
+                    </div>
+            </div>
+<br>
+            <div class="button_container">
+                <button type="submit">Apply Now</button>
+            </div>
+          </form>
+        </div>
+    </div>
+</body>
+</html>
