@@ -1,70 +1,158 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" dir="ltr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width='device-width', initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Contact</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <title>iCoder-Heaven for Programmer</title>
 </head>
+
 <body>
-    <header id="heder">
-        <h1>Contact Us</h1>
-        <section id="header">
-         <article>
-            <nav>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="index.html#about">About <abbr title="Little salad shop">LSS</abbr></a></li>
-                    <li><a href="index.html#menu" target="_blank">Our Menu</a></li>
-                    <li><a href="hours.html" target="_blank" >Store Hours</a></li>
-                </ul>
-            </nav>
-        </header>
-            <figure>
-                <img src="img/tacos_close_up_400x260.png" alt="Litte Salad Shop Salads" title="Litte Salad Shop Salads">
-                <figcaption>Litte Salad Shop Salads</figcaption>
-            </figure>
-         </article>
-        </section>
-        <section id="form">
-            <article>
-                <h2>Our Contact Form</h2>
-                <fieldset>
-                    <legend>Send Us A Message</legend>
-                    <form action="https://httpbin.org/get" method="get">
-                        <label for="Name">Name</label>
-                        <input type="text" id="Name"  name="Name">
-                        <br>
-                        <label for="Email">Email</label>
-                        <input type="email" name="Email" id="Eamil">
-                        <br>
-                        <label for="Message">Your Message:</label>
-                        <br>
-                        <textarea name="Message" id="Message" cols="30" rows="10"></textarea>
-                        <br>
-                        <input type="submit" value="send">
-                        <input type="reset" value="reset">
-                    </form>
-                </fieldset>
-            </article>
-        </section>
-        <br>
-    <section id="location">
-        <br>
-        <address>
-            159/1 Trimuti Market <br>
-            Sanjay Nagar, Bareilly <br>
-            <br>
-            <label for="Phone">Phone:</label>
-            <a href="tel:4464654566">4464654566</a>
-            <br>
-        </address>
-        <br>
-        <a href="#header">Back To Top</a>
-    </section>
-    <hr>
-    <section id="copyright">
-        Copyright &copy; The Little Salad Shop
-    </section>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <!-- <a class="navbar-brand" href="#">iCoder</a> -->
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link" href="/project.html">iCoder</a>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">About</a>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link">Contact Us</a>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link" href="/product.html">product Information</a>
+          </li>
+
+
+
+
+          <!-- <li class="nav-item">
+          <a class="nav-link" href="/product.html"></a>
+        </li> -->
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+            </ul>
+          </li>
+
+        </ul>
+
+        <h1>Helps & Conatct us</h1>  
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search">
+          <button class="btn btn-outline-success">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="py-5 text-center" width="72" height="57">
+
+          <h1>Helps & Conatct us</h1>  
+
+    <div class="container my-5">
+      <div class="mb-4">
+        <label for="exampleFormControlInput1" class="form-label"></label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email or mobile number">
+      </div>
+
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Type realated Queries</option>
+        <option value="1">price related</option>
+        <option value="2">product related</option>
+        <option value="3">Discount realated</option>
+        <option value="3">Any Other Queries</option>
+      </select>
+
+
+
+      <select class="form-select my-4" aria-label="Default select example">
+        <option selected>Open this select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+
+      <div class="form-check text-start">
+           <label class="form-check-label" for="radioNoLabel1">
+          Are you member
+        </label>
+        <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1">
+      </div>
+
+            <div class="form-check text-start">
+           <label class="form-check-label" for="radioNoLabel1">
+          Are you Coder
+        </label>
+        <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1">
+      </div>
+
+           <div class="form-check text-start">
+           <label class="form-check-label" for="radioNoLabel1">
+          Are you Student
+        </label>
+        <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1">
+      </div>
+
+         <div class="form-check text-start">
+           <label class="form-check-label" for="radioNoLabel1">
+          Other
+        </label>
+        <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1">
+      </div>
+
+      <div class="form-floating my-4">
+        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+          style="height: 100px"></textarea>
+        <label for="floatingTextarea2">Comments/queries</label>
+      </div>
+      <div class="col-1 my-4">
+        <button class="btn btn-primary" type="submit">Submit form</button>
+      </div>
+
+
+      <footer class="text-start w-100">
+        <p class="w-100">© 2017–2026 Website</p>
+        <ul class="list ">
+          <li class="list-inline-item"><a href="#">Privacy</a></li>
+          <li class="list-inline-item"><a href="#">Terms</a></li>
+          <li class="list-inline-item"><a href="#">Support</a></li>
+        </ul>
+      </footer>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

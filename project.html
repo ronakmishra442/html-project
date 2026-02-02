@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <title>iCoder - Heaven for Programmer</title>
+
+  <style>
+    .carousel,
+    .carousel-inner,
+    .carousel-item {
+      height: 50vh;
+    }
+
+    .carousel-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">iCoder</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <!-- ❌ agar same page chahiye to href="#about" -->
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">About</a>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link" href="/product.html">Product Information</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html">Contact Us</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+            </ul>
+          </li>
+
+        </ul>
+
+        <form class="d-flex mx-2">
+          <input class="form-control me-2" type="search" placeholder="Search">
+          <button class="btn btn-outline-light">Search</button>
+        </form>
+
+        <button type="button" class="btn btn-danger mx-2" data-bs-toggle="modal" data-bs-target="#LoginModal">
+          Login</button>
+        <button type="button " class="btn btn-danger mx-2" data-bs-toggle="modal" data-bs-target="#Sign-upModal">
+          Sign-up</button>
+      </div>
+    </div>
+  </nav>
+  <!-- Modal -->
+
+  <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="LoginModalLabel">Get an iCoder-account</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword2" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="Sign-upModal" tabindex="-1" aria-labelledby="Sign-upModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="Sign-upModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword2" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= ABOUT / CAROUSEL ================= -->
+  <div id="about" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <img src="https://images.unsplash.com/photo-1593642702821-c8da6771f0c6" alt="Laptop">
+        <div class="carousel-caption d-none d-md-block">
+          <h4>Welcome to iCoder</h4>
+          <p>The Best Coding Blog</p>
+          <button class="btn btn-primary">Technology</button>
+          <button class="btn btn-danger">Web Development</button>
+          <button class="btn btn-success">Website</button>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed" alt="Laptop">
+        <div class="carousel-caption d-none d-md-block">
+          <h4>Learn Programming</h4>
+          <p>With Real Projects</p>
+          <button class="btn btn-primary">Technology</button>
+          <button class="btn btn-danger">Web Development</button>
+          <button class="btn btn-success">Website</button>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img
+          src="https://g2u-wp-prod.s3-ap-southeast-2.amazonaws.com/wp-content/uploads/2025/01/shutterstock_2328203513.jpg"
+          alt="Laptop">
+        <div class="carousel-caption d-none d-md-block">
+          <h4>Grow Your Skills</h4>
+          <p>Start Coding Today</p>
+          <button class="btn btn-primary">Technology</button>
+          <button class="btn btn-danger">Web Development</button>
+          <button class="btn btn-success">Website</button>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#about" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#about" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- ================= CONTENT ================= -->
+  <div class="container my-5">
+    <div class="row mb-2">
+
+      <div class="col-md-6">
+        <div class="row g-0 border rounded shadow-sm mb-4">
+          <div class="col p-4">
+            <strong class="text-primary">World</strong>
+            <h3>Featured post</h3>
+            <p>This is my coding based platform</p>
+            <a href="#">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="https://images.unsplash.com/photo-1593642702821-c8da6771f0c6" width="300" height="300"
+              style="object-fit:cover;">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="row g-0 border rounded shadow-sm mb-4">
+          <div class="col p-4">
+            <strong class="text-warning">Design</strong>
+            <h3>Nature</h3>
+            <p>Nature based design content</p>
+            <a href="#">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img
+              src="https://media.craftyartapp.com/uploadedFiles/thumb_file/b59ca527c631af85d634650d33a3f35e1d7f2f2f1668855176.jpg"
+              width="300" height="300" style="object-fit:cover;">
+          </div>
+        </div>
+      </div>
+      <div class="row mb-2">
+
+        <div class="row mb-2">
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <!-- LEFT CONTENT -->
+              <div class="col p-4 d-flex flex-column position-static"> <strong
+                  class="d-inline-block mb-2 text-success">Mind</strong>
+                <h3 class="mb-0">Thinking post</h3>
+                <p class="card-text mb-auto"> This is my Aptitude based platform </p> <a href="#"
+                  class="stretched-link">Continue reading</a>
+              </div> <!-- RIGHT IMAGE -->
+              <div class="col-auto d-none d-lg-block"> <img
+                  src="https://www.theforage.com/blog/wp-content/uploads/2024/10/career-aptitude-test.jpg" width="400"
+                  height="400" class="img-fluid" style="object-fit: cover;" alt="nature">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="row g-0 border rounded shadow-sm mb-4">
+              <div class="col p-4">
+                <strong class="text-info">Design</strong>
+                <h3>Nest hub</h3>
+                <p>Computer based design content</p>
+                <a href="#">Continue reading</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img
+                  src="https://lh3.googleusercontent.com/UK8aHGzoF23BZUEl7tDJoUga4_fsPUMDAvCFXUPChxkC8zO2TYEE22XmDHN_i2JujblITT18WzKdmOOb8zTUoCR05pRU4FRYoaM8=c0xffffff-rj"
+                  width="300" height="300" style="object-fit:cover;">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <footer class="my-5 pt-5 text-body-secondary text-center text-small">
+        <p class="mb-1">© 2017–2025 Company Name</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#">Privacy</a></li>
+          <li class="list-inline-item"><a href="#">Terms</a></li>
+          <li class="list-inline-item"><a href="#">Support</a></li>
+        </ul>
+      </footer>
+
+      <!-- Bootstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
