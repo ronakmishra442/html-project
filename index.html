@@ -1,0 +1,498 @@
+ <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StayEase - Find Your Perfect Stay</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+     Navbar 
+
+    <header class="navbar">
+      <div class="logo">
+        <i class="fa-solid fa-house"></i>
+        StayEase
+      </div>
+
+      <div class="search-bar">
+        <input type="text" placeholder="Search destinations" />
+        <button>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#">Stays</a></li>
+          <li><a href="#">Experiences</a></li>
+          <li><a href="#">Hosts</a></li>
+        </ul>
+      </nav>
+
+      <div class="profile">
+        <i class="fa-solid fa-user"></i>
+      </div>
+    </header>
+
+     
+
+    <section class="hero">
+      <div class="overlay"></div>
+
+      <div class="hero-content">
+        <h1>Find Your Next Stay</h1>
+
+        <p>
+          Explore unique homes, luxury villas, beach resorts and unforgettable
+          experiences.
+        </p>
+
+        <div class="booking-box">
+          <div class="field">
+            <label>Location</label>
+            <input type="text" placeholder="Where are you going?" />
+          </div>
+
+          <div class="field">
+            <label>Check In</label>
+            <input type="date" />
+          </div>
+
+          <div class="field">
+            <label>Check Out</label>
+            <input type="date" />
+          </div>
+
+          <!-- <div class="field">
+                    <label>Guests</label>
+                    <input type="number" placeholder="2">
+                </div> -->
+
+          <div class="field">
+            <label>Guests</label>
+            <input type="number" placeholder="2" min="1" max="10000" />
+          </div>
+
+          <button class="search-btn">Search</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+
+    <section class="categories">
+      <h2>Explore Categories</h2>
+
+      <div class="category-wrapper">
+        <div class="category-card">
+          <i class="fa-solid fa-umbrella-beach"></i>
+          <span>Beachfront</span>
+        </div>
+
+        <div class="category-card">
+          <i class="fa-solid fa-water-ladder"></i>
+          <span>Pools</span>
+        </div>
+
+        <div class="category-card">
+          <i class="fa-solid fa-house"></i>
+          <span>Cabins</span>
+        </div>
+
+        <div class="category-card">
+          <i class="fa-solid fa-tree"></i>
+          <span>Nature</span>
+        </div>
+
+        <div class="category-card">
+          <i class="fa-solid fa-campground"></i>
+          <span>Camping</span>
+        </div>
+
+        <div class="category-card">
+          <i class="fa-solid fa-mountain"></i>
+          <span>Mountain</span>
+        </div>
+
+        <div class="category-card">
+          <i class="fa-solid fa-gem"></i>
+          <span>Luxury</span>
+        </div>
+
+        <div class="category-card">
+          <i class="fa-solid fa-fire"></i>
+          <span>Trending</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Listings -->
+
+    <section class="listings">
+      <h2>Popular Stays</h2>
+
+      <div class="listing-grid">
+        <!-- Card 1 -->
+
+        <div class="listing-card">
+          <img
+            src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800"
+            alt="property"
+          />
+
+          <div class="heart">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+
+          <div class="card-content">
+            <div class="top">
+              <h3>Luxury Villa</h3>
+
+              <span>
+                <i class="fa-solid fa-star"></i>
+                4.9
+              </span>
+            </div>
+
+            <p>Gurgaon</p>
+
+            <h4>₹12,500 / night</h4>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+
+        <div class="listing-card">
+          <img
+            src="https://images.unsplash.com/photo-1494526585095-c41746248156?w=800"
+            alt="property"
+          />
+
+          <div class="heart">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+
+          <div class="card-content">
+            <div class="top">
+              <h3>Modern Apartment</h3>
+
+              <span>
+                <i class="fa-solid fa-star"></i>
+                4.8
+              </span>
+            </div>
+
+            <p>Mumbai</p>
+
+            <h4>₹9,999 / night</h4>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+
+        <div class="listing-card">
+          <img
+            src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800"
+            alt="property"
+          />
+
+          <div class="heart">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+
+          <div class="card-content">
+            <div class="top">
+              <h3>Beach House</h3>
+
+              <span>
+                <i class="fa-solid fa-star"></i>
+                5.0
+              </span>
+            </div>
+
+            <p>Goa</p>
+
+            <h4>₹19,999 / night</h4>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+
+        <div class="listing-card">
+          <img
+            src="https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800"
+            alt="property"
+          />
+
+          <div class="heart">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+
+          <div class="card-content">
+            <div class="top">
+              <h3>Cozin cabin</h3>
+
+              <span>
+                <i class="fa-solid fa-star"></i>
+                4.7
+              </span>
+            </div>
+
+            <p>Jammu & Kashmir</p>
+
+            <h4>₹7,999 / night</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="listings">
+     
+
+      <div class="listing-grid">
+        <!-- Card 1 -->
+
+        <div class="listing-card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRai97IKn30MJhLpWisTo4REdpoUJ8psKJOwg&s"
+            alt="property"
+          />
+
+          <div class="heart">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+
+          <div class="card-content">
+            <div class="top">
+              <h3>Flat</h3>
+
+              <span>
+                <i class="fa-solid fa-star"></i>
+                4.6
+              </span>
+            </div>
+
+            <p>Noida</p>
+
+            <h4>₹4480 for 2 night </h4>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+
+        <div class="listing-card">
+          <img
+            src="https://imagecdn.99acres.com/media1/33624/11/672491105M-1766501972873.jpg"
+            alt="property"
+          />
+
+          <div class="heart">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+
+          <div class="card-content">
+            <div class="top">
+              <h3>Bungalow</h3>
+
+              <span>
+                <i class="fa-solid fa-star"></i>
+                5.0
+              </span>
+            </div>
+
+            <p>Raipur</p>
+
+            <h4>₹14,999 / night</h4>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+
+        <div class="listing-card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIXcmJPHDG-jPRqOhhVEWEmdfBhC4U4_Qb4A&s"
+            alt="property"
+          />
+
+          <div class="heart">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+
+          <div class="card-content">
+            <div class="top">
+              <h3>Appartment</h3>
+
+              <span>
+                <i class="fa-solid fa-star"></i>
+                4.7
+              </span>
+            </div>
+
+            <p>Kolkata</p>
+
+            <h4>₹10,000 for  2 night</h4>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+
+        <div class="listing-card">
+          <img
+            src="https://housing-images.n7net.in/01c16c28/2a792e0fc2cea91f218c47ecd6ea55c0/v0/medium/1_bhk_apartment-for-rent-malviya_nagar_jaipur-Jaipur-bedroom_one.jpg"
+            alt="property"
+          />
+
+          <div class="heart">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+
+          <div class="card-content">
+            <div class="top">
+              <h3>Flat</h3>
+
+              <span>
+                <i class="fa-solid fa-star"></i>
+                4.9
+              </span>
+            </div>
+
+            <p>Jaipur</p>
+
+            <h4>₹6,999 / night</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Destinations -->
+
+    <section class="destinations">
+      <h2>Featured Destinations</h2>
+
+      <div class="destination-grid">
+        <div class="destination-card">
+          <img
+            src="https://img.magnific.com/premium-photo/gurgaon-haryana-india-02022022-cyber-city-gurgaon_1033579-212993.jpg?semt=ais_hybrid&w=740&q=80"
+          />
+          <h3>Gurgaon</h3>
+        </div>
+
+        <div class="destination-card">
+          <img
+            src="https://cdn.britannica.com/26/84526-050-45452C37/Gateway-monument-India-entrance-Mumbai-Harbour-coast.jpg"
+          />
+          <h3>Mumbai</h3>
+        </div>
+
+        <div class="destination-card">
+          <img
+            src="https://saishishirtours.in/wp-content/uploads/2025/07/Baga-Beach.jpg"
+          />
+          <h3>Goa Beach</h3>
+        </div>
+
+        <div class="destination-card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_YL-wCTDPJVOssoOs2iCB-1s_MYuFKeXWig&s"
+          />
+          <h3>Kashmir</h3>
+        </div>
+      </div>
+    </section>
+
+         <div class="destination-c">
+          <img
+            src="https://cimages.elitehavens.com/images/gallery/lowres/P00489/Listing.jpg"
+          />
+          <h3>Dubai</h3>
+        </div>
+
+       
+
+    <!-- Host Banner -->
+
+    <section class="host-banner">
+      <div class="host-content">
+        <h2>Become a Host</h2>
+
+        <p>Earn extra income by sharing your space with travelers worldwide.</p>
+
+        <button>Learn More</button>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+
+    <section class="testimonials">
+      <h2>What Guests Say</h2>
+
+      <div class="testimonial-grid">
+        <div class="testimonial">
+          <p>Amazing experience! Everything was exactly as shown.</p>
+          <h4>- Leo</h4>
+        </div>
+
+        <div class="testimonial">
+          <p>Best booking platform and beautiful homes.</p>
+          <h4>- Michael</h4>
+        </div>
+
+        <div class="testimonial">
+          <p>Smooth booking and wonderful stay.</p>
+          <h4>- Zara</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-col">
+          <h3>StayEase</h3>
+          <a href="#">About</a>
+          <a href="#">2026 Summer Series</a>
+          <a href="#">Investors</a>
+           <a href="#">Carrers</a>
+            <a href="#">StayEase emergency stays</a>
+        </div>
+
+        <div class="footer-col">
+          <h3>Support</h3>
+          <a href="#">Help Center</a>
+          <a href="#">Safety</a>
+          <a href="#">Contact</a>
+           <a href="#">Cancellations Optionr</a>
+          <a href="#">Air Covers</a>
+          <a href="#">Disability Support</a>
+        </div>
+
+        <div class="footer-col">
+          <h3>Hosting</h3>
+          <a href="#">Become a Host</a>
+          <a href="#">Community</a>
+          <a href="#">Resources</a>
+            <a href="#">Hosting Responsibly</a>
+          <a href="#">Refer a host</a>
+          <a href="#">StayEase your home</a>
+        </div>
+      </div>
+
+      <p class="copyright">© 2026 StayEase. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html> 
